@@ -1,8 +1,9 @@
 # 注意：
 
 本项目使用paddelocr作为核心技术，其他版本可能需要自己修改代码
-## 1.环境位置及部署说明
-###编译器：
+
+# 1.环境位置及部署说明
+## 编译器：
 
 PyCharm 安装教程（Windows: https://www.runoob.com/w3cnote/pycharm-windows-install.html
 
@@ -10,15 +11,15 @@ PyCharm 安装教程（Windows: https://www.runoob.com/w3cnote/pycharm-windows-i
 
 安装python:python 3.8
 
-###vue插件:
+## vue插件:
 
 pycharm配置vue教程(https://www.cnblogs.com/zezhou/p/13019386.html)
 
-###部署说明:
+## 部署说明:
 
 在Python环境和Vue插件配置好后，需要安装使用到的库。
 
-####(1) 后端
+### (1) 后端
 
 安装所需要的python库: 在Terminal中输入依次输入下列命令行
 ```bash
@@ -37,7 +38,7 @@ cd back-end
 python app.py
 ``` 
 
-####(2) 前端部署
+### (2) 前端部署
 
 先安装依赖：在Terminal中输入依次输入下列命令行
 
@@ -55,13 +56,13 @@ npm run serve
 然后在浏览器打开localhost即可得到演示demo效果
 
 
-## 2.接口使用说明
+# 2.接口使用说明
 
-### (1)back-end(后端服务器)
+## (1)back-end(后端服务器)
 
 改文件存储图片识别的逻辑代码和前后端交互代码
 
-#### 其中，app.py为前后端交互代码
+### 其中，app.py为前后端交互代码
 此处以身份证识别接口为例,通过Flask框架写相应函数：
 ```bash
 @app.route('/upload', methods=['GET', 'POST'])
@@ -92,7 +93,7 @@ def upload_file():
 ```
 这样前端发出POST请求时，会对上传的图像进行处理。
 
-#### 图片预测接口
+### 图片预测接口
 
 processor文件中AIDetector_pytorch.py为各类型图片预测的接口。此处以身份证识别接口为例
 
